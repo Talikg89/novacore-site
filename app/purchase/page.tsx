@@ -30,9 +30,9 @@ export default function PurchasePage() {
             <span className="content-kicker">What Customers Buy</span>
             <h2>NovaCore premium access</h2>
             <p>
-              Present NovaCore here as a premium Windows optimization product with
-              a clean commercial flow, clear delivery expectations, and a defined
-              activation experience.
+              NovaCore is sold as a premium Windows optimization product with a
+              clear purchase flow, secure delivery, and straightforward activation
+              after checkout.
             </p>
           </article>
           <article className="content-card">
@@ -48,8 +48,9 @@ export default function PurchasePage() {
             <span className="content-kicker">Secure Checkout</span>
             <h3>Payment handled by your provider</h3>
             <p>
-              Replace this with your final checkout provider, accepted payment
-              methods, tax wording, invoice behavior, and fraud review rules.
+              Orders are processed through a secure checkout flow with payment
+              confirmation, invoice support, and fraud review where necessary to
+              protect both customers and the platform.
             </p>
           </article>
         </div>
@@ -64,7 +65,7 @@ export default function PurchasePage() {
               <li>The order is processed and confirmed through the checkout provider.</li>
               <li>The customer receives purchase confirmation and installer access.</li>
               <li>NovaCore is downloaded and installed on the target Windows system.</li>
-              <li>The product is activated through the final license or account flow.</li>
+              <li>The product is activated through the NovaCore license or account flow.</li>
               <li>Premium access unlocks and the customer can begin using the app.</li>
             </ol>
           </article>

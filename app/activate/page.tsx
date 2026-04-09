@@ -31,9 +31,9 @@ export default function ActivatePage() {
             <h2>What customers should expect</h2>
             <ol className="content-number-list">
               <li>Checkout completes and the order is confirmed.</li>
-              <li>The customer receives download access and the final licensing details.</li>
+              <li>The customer receives download access and license delivery instructions.</li>
               <li>NovaCore is downloaded and installed on the target Windows system.</li>
-              <li>The customer signs in or enters the license depending on the final launch flow.</li>
+              <li>The customer signs in or enters the license through the activation screen inside the app.</li>
               <li>Activation validates the purchase and unlocks premium access.</li>
             </ol>
           </article>
@@ -41,10 +41,9 @@ export default function ActivatePage() {
             <span className="content-kicker">Where To Enter A License</span>
             <h2>Inside the NovaCore desktop app</h2>
             <p>
-              The live product flow should direct users to an activation screen,
-              account prompt, or settings area where license validation happens.
-              Use this page to explain your final in-app entry point with
-              screenshots later if desired.
+              Customers enter their license on the activation screen inside the
+              NovaCore desktop app. The same area can also be used to sign in,
+              retry validation, and confirm that premium access has been unlocked.
             </p>
           </article>
         </div>
@@ -58,7 +57,7 @@ export default function ActivatePage() {
             <p>
               Once the purchase is verified, NovaCore can unlock premium
               functionality, updates, and any product features tied to the
-              customer’s plan or license type.
+              customer's plan or license type.
             </p>
           </article>
           <article className="content-card">
@@ -88,7 +87,7 @@ export default function ActivatePage() {
             <span className="content-kicker">Need a recovery path?</span>
             <h2>Support can help with missing keys, device changes, and failed unlocks</h2>
             <p>
-              Activation issues should be routed through support with an order ID,
+              Activation issues are handled fastest through support with an order ID,
               purchase email, and a short summary of the error message if one was
               shown inside the app.
             </p>

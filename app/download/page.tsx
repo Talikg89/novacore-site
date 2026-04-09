@@ -30,8 +30,8 @@ export default function DownloadPage() {
             <span className="content-kicker">Latest Version</span>
             <h2>NovaCore Desktop 1.0.0</h2>
             <p>
-              Replace this version block with the active production release,
-              changelog reference, and installer filename once shipping begins.
+              The current public build includes the latest launcher, activation
+              flow, and onboarding improvements for supported Windows systems.
             </p>
             <Link href="/purchase" className="inline-action-link">
               Unlock Download Access
@@ -46,8 +46,9 @@ export default function DownloadPage() {
             <span className="content-kicker">Security</span>
             <h3>Installer trust and signature status</h3>
             <p>
-              Replace this block with your final code-signing certificate,
-              checksum, publisher name, and security verification guidance.
+              NovaCore installers are intended to be distributed with publisher
+              verification, release integrity checks, and clear version matching
+              between the website, installer, and activation flow.
             </p>
           </article>
         </div>
@@ -67,19 +68,19 @@ export default function DownloadPage() {
           </article>
           <article className="content-card">
             <span className="content-kicker">Release Notes</span>
-            <h2>Structure ready for live updates</h2>
+            <h2>Recent update highlights</h2>
             <div className="content-list-block">
               <div>
-                <strong>Included in this release</strong>
-                <p>Replace with real feature improvements, activation changes, compatibility notes, and bug fixes.</p>
+                <strong>Installer and delivery improvements</strong>
+                <p>Improved first-run flow, clearer delivery messaging, and a smoother setup experience for new customers.</p>
               </div>
               <div>
-                <strong>Known issues</strong>
-                <p>Use this area for temporary compatibility notes, installer warnings, or hardware-specific guidance.</p>
+                <strong>Compatibility guidance</strong>
+                <p>Best results are expected on supported Windows 10 and Windows 11 builds with current system updates installed.</p>
               </div>
               <div>
-                <strong>Upgrade notes</strong>
-                <p>Add migration steps here if future versions require re-activation, account linking, or reinstall steps.</p>
+                <strong>Activation and licensing</strong>
+                <p>Licenses continue through the normal activation flow after install, with support available for account or device recovery.</p>
               </div>
             </div>
           </article>

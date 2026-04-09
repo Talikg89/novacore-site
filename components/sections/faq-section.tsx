@@ -22,8 +22,8 @@ export function FaqSection() {
         <div className="faq-support-icon">N</div>
         <h3>More questions?</h3>
         <p>
-          Reach out through the upcoming NovaCore support flow for help with
-          licenses, activation, and optimization guidance.
+          Reach out to NovaCore support for help with licenses, activation,
+          billing questions, and optimization guidance.
         </p>
         <a href="/contact" className="hero-button hero-button-primary">
           Contact Support

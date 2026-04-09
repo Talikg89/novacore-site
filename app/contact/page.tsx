@@ -142,8 +142,8 @@ export default function ContactPage() {
               </label>
               <div className="form-footer">
                 <p>
-                  For now, replace this UI with your preferred form handler later,
-                  or route submissions to `support@novacore.app`.
+                  Support requests can be sent through this form layout or by
+                  email at `support@novacore.app` for direct assistance.
                 </p>
                 <button type="submit" className="hero-button hero-button-primary">
                   Submit Request

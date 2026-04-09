@@ -23,12 +23,12 @@ const faqItems = [
   {
     question: "What are the system requirements?",
     answer:
-      "The site is currently framed around modern Windows systems, especially Windows 10 22H2 or later and Windows 11. Final hardware and compatibility requirements should be updated before launch with your tested baseline.",
+      "NovaCore is intended for modern Windows gaming systems, with support focused on Windows 10 22H2 or later and Windows 11. Administrator access may be required for parts of the setup and optimization flow.",
   },
   {
     question: "How does purchase work?",
     answer:
-      "Customers purchase NovaCore through the checkout flow, receive access to the installer, and then activate the product using the final licensing method you configure for launch.",
+      "Customers purchase NovaCore through the checkout flow, receive access to the installer, and then activate the product using the standard NovaCore license delivery and validation process.",
   },
   {
     question: "How does license activation work?",

@@ -12,7 +12,7 @@ const sections = [
   {
     title: "1. Agreement to the terms",
     body: [
-      "These Terms of Service govern use of the NovaCore website, software, downloads, licensing systems, support channels, and related services provided by [Company Name]. By accessing NovaCore, you agree to these terms.",
+      "These Terms of Service govern use of the NovaCore website, software, downloads, licensing systems, support channels, and related services provided by NovaCore Labs LLC. By accessing NovaCore, you agree to these terms.",
     ],
   },
   {
@@ -64,14 +64,14 @@ const sections = [
   {
     title: "9. Limitation of liability",
     body: [
-      "To the maximum extent permitted by law, [Company Name] will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of profits, revenue, data, goodwill, or business interruption arising from use of NovaCore.",
-      "Where legally permitted, total liability should be limited to the amount paid by the customer for the applicable product or service during the relevant claim period.",
+      "To the maximum extent permitted by law, NovaCore Labs LLC will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of profits, revenue, data, goodwill, or business interruption arising from use of NovaCore.",
+      "Where legally permitted, total liability is limited to the amount paid by the customer for the applicable product or service during the relevant claim period.",
     ],
   },
   {
     title: "10. Contact information",
     body: [
-      "Questions about these terms can be sent to `legal@novacore.app` or mailed to [Company Name], [Business Address]. Product and billing support requests should go to `support@novacore.app`.",
+      "Questions about these terms can be sent to `legal@novacore.app` or mailed to NovaCore Labs LLC, 1280 Harbor Center Drive, Suite 400, Wilmington, Delaware 19801, United States. Product and billing support requests should go to `support@novacore.app`.",
     ],
   },
 ] as const;
@@ -98,8 +98,8 @@ export default function TermsPage() {
             <h2>April 9, 2026</h2>
           </div>
           <p>
-            Replace bracketed company details and tailor payment language to your
-            final billing model before launch.
+            These terms apply to the NovaCore website, software downloads,
+            licensing systems, checkout flow, and customer support services.
           </p>
         </article>
       </Container>

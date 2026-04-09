@@ -28,10 +28,10 @@ export default function RefundPolicyPage() {
         <div className="content-page-grid content-page-grid-3">
           <article className="content-card content-card-highlight">
             <span className="content-kicker">Standard Window</span>
-            <h2>Replace with your real eligibility period</h2>
+            <h2>7-day refund request window</h2>
             <p>
-              This page is ready for a one-time purchase or premium billing model.
-              Replace the timing below with your final live policy before launch.
+              Refund requests for first-time NovaCore purchases must be submitted
+              within 7 calendar days of the original transaction date.
             </p>
           </article>
           <article className="content-card">
@@ -58,14 +58,14 @@ export default function RefundPolicyPage() {
           <article className="content-card legal-section-card">
             <h2>Eligibility and timing</h2>
             <p>
-              NovaCore should define a clear review period for one-time purchases
-              and any future recurring billing products. Replace this section with
-              your exact live window, such as a 7-day or 14-day request period
-              from the date of purchase.
+              NovaCore reviews refund requests submitted within 7 calendar days of
+              the initial purchase date for first-time orders. Requests made after
+              that window may be declined unless required by applicable law.
             </p>
             <p>
-              If you later introduce subscriptions, add separate rules for renewal
-              timing, cancellation cutoffs, and proration expectations.
+              Refund eligibility may depend on order verification, account status,
+              and whether the request involves fraud, chargeback abuse, repeated
+              refunds, or other misuse of the purchase system.
             </p>
           </article>
           <article className="content-card legal-section-card">

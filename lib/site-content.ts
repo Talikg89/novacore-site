@@ -105,7 +105,7 @@ export const howItWorksSteps = [
   {
     title: "Sign in",
     description:
-      "Sign in if required by the final purchase flow for account-aware activation and support recovery.",
+      "Sign in when needed for account-aware activation, purchase recovery, and support verification.",
   },
   {
     title: "Activate with the key",

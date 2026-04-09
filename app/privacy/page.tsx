@@ -12,7 +12,7 @@ const sections = [
   {
     title: "1. Who this policy applies to",
     body: [
-      "This Privacy Policy explains how [Company Name] collects, uses, stores, and protects personal information in connection with the NovaCore website, desktop application, purchase flow, and customer support channels.",
+      "This Privacy Policy explains how NovaCore Labs LLC collects, uses, stores, and protects personal information in connection with the NovaCore website, desktop application, purchase flow, and customer support channels.",
       "It applies to visitors, customers, license holders, and anyone who contacts NovaCore support or interacts with our download and activation experience.",
     ],
   },
@@ -37,14 +37,14 @@ const sections = [
     title: "4. Third-party services",
     body: [
       "NovaCore may rely on third-party providers for payment processing, hosting, email delivery, analytics, crash reporting, support tooling, or licensing infrastructure. Those providers may process information on our behalf under their own terms and privacy practices.",
-      "Common examples may include a payment processor, analytics provider, transactional email service, hosting platform, and customer support platform. Replace this section with your exact vendors before launch.",
+      "These providers help NovaCore process payments securely, deliver transactional email, host parts of the service, measure site usage, and manage support operations. We only work with service providers that support commercially reasonable privacy and security standards.",
     ],
   },
   {
     title: "5. Data retention",
     body: [
       "We retain information for as long as needed to provide the product, comply with legal or accounting obligations, resolve disputes, enforce agreements, maintain fraud prevention records, and support valid license recovery and customer history.",
-      "Retention periods should be adjusted based on your real billing, support, analytics, and legal requirements.",
+      "Retention periods vary depending on the type of record involved, including billing history, support tickets, activation records, and security logs.",
     ],
   },
   {
@@ -57,14 +57,14 @@ const sections = [
   {
     title: "7. Security",
     body: [
-      "NovaCore should use reasonable administrative, technical, and organizational measures to protect customer information against unauthorized access, misuse, disclosure, alteration, and loss.",
+      "NovaCore uses reasonable administrative, technical, and organizational measures to protect customer information against unauthorized access, misuse, disclosure, alteration, and loss.",
       "No system can guarantee absolute security, so users should also protect their email account, purchase records, and device access credentials.",
     ],
   },
   {
     title: "8. Contact information",
     body: [
-      "For privacy questions, requests, or complaints, contact `legal@novacore.app` or write to [Company Name], [Business Address].",
+      "For privacy questions, requests, or complaints, contact `legal@novacore.app` or write to NovaCore Labs LLC, 1280 Harbor Center Drive, Suite 400, Wilmington, Delaware 19801, United States.",
       "If you also need account, billing, or license help, contact `support@novacore.app`.",
     ],
   },
@@ -92,9 +92,8 @@ export default function PrivacyPage() {
             <h2>April 9, 2026</h2>
           </div>
           <p>
-            Replace bracketed business details and vendor names before launch so
-            the page reflects your actual legal entity, address, and service
-            providers.
+            This policy applies to the NovaCore website, desktop software,
+            customer support operations, and purchase and activation systems.
           </p>
         </article>
       </Container>
