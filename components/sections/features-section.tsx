@@ -7,8 +7,8 @@ export function FeaturesSection() {
     <Container id="features">
       <SectionHeading
         eyebrow="Features"
-        title="Built around gamer outcomes: cleaner frame pacing, lower latency, and harder system control."
-        description="NovaCore now reads like a performance toolkit for people chasing a sharper competitive edge, not a bland maintenance app. Every section is tuned to sell responsiveness, stability, and enthusiast-grade Windows control."
+        title="Built for frame stability, latency-aware tuning, and system control."
+        description="NovaCore focuses on tuning the parts of Windows that influence gameplay responsiveness, startup behavior, and background overhead."
       />
       <div className="card-grid">
         {featureCards.map((feature) => (

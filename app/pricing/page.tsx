@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ContentPage, buildMetadata } from "@/components/ui/content-page";
 import { Container } from "@/components/ui/container";
+import { gumroadLink } from "@/lib/site-content";
 
 export const metadata: Metadata = buildMetadata(
   "Pricing",
-  "NovaCore Personal is a one-time purchase built for gamers who want lower latency, better FPS stability, and a cleaner Windows setup.",
+  "NovaCore Personal is a one-time purchase built for gamers who want a cleaner, more responsive Windows setup.",
   "/pricing",
 );
 
@@ -20,7 +21,7 @@ export default function PricingPage() {
       }
       description="NovaCore is sold as a one-time purchase so you can keep the performance tools on your machine without recurring fees."
       actions={[
-        { href: "/purchase", label: "Buy NovaCore" },
+        { href: gumroadLink, label: "Buy NovaCore" },
         { href: "/contact", label: "Talk to Support", variant: "secondary" },
       ]}
     >
@@ -31,7 +32,7 @@ export default function PricingPage() {
               <span className="pricing-label">NovaCore Personal</span>
               <h3 className="pricing-title">Premium gaming and Windows performance tuner</h3>
               <p>
-                A one-time purchase for gamers and power users who want FPS-focused
+                A one-time purchase for gamers and power users who want performance-focused
                 optimization, lower overhead, cleaner startup behavior, tuning
                 control, and license-protected activation.
               </p>
@@ -48,10 +49,16 @@ export default function PricingPage() {
                 <li>Download access after purchase</li>
               </ul>
             </div>
+            <p className="pricing-trust-text">Secure checkout via Gumroad - Instant access after purchase.</p>
             <div className="cta-row">
-              <Link href="/purchase" className="button button-primary">
+              <a
+                href={gumroadLink}
+                className="button button-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Buy NovaCore
-              </Link>
+              </a>
               <Link href="/faq" className="button button-secondary">
                 View FAQ
               </Link>

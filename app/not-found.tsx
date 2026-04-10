@@ -38,7 +38,7 @@ export default function NotFound() {
           <article className="content-card">
             <span className="content-kicker">License Questions</span>
             <h3>Activation Help</h3>
-            <p>Use the activation page for purchase recovery, premium unlock help, and failed activation steps.</p>
+            <p>Use the activation page for purchase recovery, unlock help, and failed activation steps.</p>
             <Link href="/activate" className="inline-action-link">
               Open Activation Help
             </Link>

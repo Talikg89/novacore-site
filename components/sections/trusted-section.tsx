@@ -6,9 +6,9 @@ export function TrustedSection() {
     <Container id="proof" className="stack-section">
       <div className="section-copy section-copy-centered">
         <h2>
-          Trusted By <span>The Best</span>
+          Built For <span>Performance-Minded Players</span>
         </h2>
-        <p>Chosen by elite players and creators for peak performance.</p>
+        <p>Designed for players and creators who care about responsiveness and control.</p>
       </div>
       <div className="trusted-grid">
         {trustedCreators.map((creator) => (

@@ -18,10 +18,10 @@ export default function RefundPolicyPage() {
           Refund <span>Policy</span>
         </>
       }
-      description="NovaCore uses a dedicated refund page so customers understand what qualifies, how timing works, and where to submit a request."
+      description="Understand what qualifies, how timing works, and where to submit a refund request."
       actions={[
         { href: "/contact", label: "Request Support" },
-        { href: "/purchase", label: "Purchase Info", variant: "secondary" },
+        { href: "/pricing", label: "Pricing", variant: "secondary" },
       ]}
     >
       <Container className="content-page-section">
@@ -39,7 +39,7 @@ export default function RefundPolicyPage() {
             <h3>Refunds may be reviewed when</h3>
             <p>
               A request is submitted within the stated policy window, the order is
-              verifiable, and the request meets your published billing and usage conditions.
+              verifiable, and the request meets the published eligibility criteria.
             </p>
           </article>
           <article className="content-card">
@@ -63,9 +63,9 @@ export default function RefundPolicyPage() {
               that window may be declined unless required by applicable law.
             </p>
             <p>
-              Refund eligibility may depend on order verification, account status,
-              and whether the request involves fraud, chargeback abuse, repeated
-              refunds, or other misuse of the purchase system.
+              Refund eligibility may depend on order verification and whether the
+              request involves fraud, chargeback abuse, repeated refunds, or other
+              misuse of the purchase system.
             </p>
           </article>
           <article className="content-card legal-section-card">
@@ -80,11 +80,11 @@ export default function RefundPolicyPage() {
               confirm eligibility under the active billing policy.
             </p>
           </article>
-          <article className="content-card legal-section-card">
+          <article className="content-card legal-section-card refund-processing-card">
             <h2>Processing and communication</h2>
-            <p>
-              If a refund is approved, processing times depend on the payment
-              provider and bank. Customers should receive confirmation once the
+            <p className="refund-processing-text">
+              If a refund is approved, processing times depend on Gumroad and the
+              customer's bank. Customers should receive confirmation once the
               request is reviewed and again when the refund is submitted.
             </p>
           </article>

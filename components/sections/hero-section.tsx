@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { heroStats } from "@/lib/site-content";
+import { gumroadLink, heroStats } from "@/lib/site-content";
 import { Container } from "@/components/ui/container";
 
 export function HeroSection() {
@@ -34,21 +34,26 @@ export function HeroSection() {
           Gaming
         </h1>
         <p>
-          NovaCore removes bloat, reduces background overhead, and optimizes
-          Windows for higher FPS, lower input delay, cleaner ping behavior, and a
-          more responsive competitive setup.
+          NovaCore removes bloat, reduces background overhead, and tunes Windows
+          for steadier frame pacing, cleaner background behavior, and a more
+          responsive competitive setup.
         </p>
         <div className="hero-buttons">
-          <Link href="/download" className="hero-button hero-button-primary">
+          <a
+            href={gumroadLink}
+            className="hero-button hero-button-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Buy NovaCore
-          </Link>
+          </a>
           <Link href="#benefits" className="hero-button hero-button-secondary">
             Explore Features
           </Link>
         </div>
         <div className="hero-meta">
-          <span>No Risk - One-Time Purchase</span>
-          <span>Competitive Performance Focus</span>
+          <span>One-time purchase</span>
+          <span>Performance-focused tuning</span>
         </div>
         <div className="hero-stats">
           {heroStats.map((stat) => (
@@ -70,6 +75,9 @@ export function HeroSection() {
             priority
           />
         </div>
+        <p className="hero-preview-note">
+          Example visualization. Results vary by system and game.
+        </p>
       </div>
     </Container>
   );

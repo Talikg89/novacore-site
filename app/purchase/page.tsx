@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ContentPage, buildMetadata } from "@/components/ui/content-page";
 import { Container } from "@/components/ui/container";
+import { gumroadLink } from "@/lib/site-content";
 
 export const metadata: Metadata = buildMetadata(
   "Purchase Information",
-  "Review the NovaCore purchase flow, checkout expectations, license delivery, and what customers receive after payment.",
+  "Review the NovaCore purchase flow, Gumroad checkout expectations, license delivery, and what customers receive after payment.",
   "/purchase",
 );
 
@@ -18,9 +19,9 @@ export default function PurchasePage() {
           Checkout & <span>Purchase Info</span>
         </>
       }
-      description="This page gives customers confidence before they buy by explaining what they receive, how billing works, and what the post-purchase experience looks like."
+      description="Understand what you receive, how billing works, and what the post-purchase experience looks like."
       actions={[
-        { href: "/download", label: "View Download Page" },
+        { href: gumroadLink, label: "Buy NovaCore" },
         { href: "/contact", label: "Ask A Question", variant: "secondary" },
       ]}
     >
@@ -28,28 +29,27 @@ export default function PurchasePage() {
         <div className="content-page-grid content-page-grid-3">
           <article className="content-card content-card-highlight">
             <span className="content-kicker">What Customers Buy</span>
-            <h2>NovaCore premium access</h2>
+            <h2>NovaCore full access</h2>
             <p>
-              NovaCore is sold as a premium Windows optimization product with a
-              clear purchase flow, secure delivery, and straightforward activation
-              after checkout.
+              NovaCore is sold as a Windows optimization product with a clear
+              purchase flow through Gumroad, secure delivery, and straightforward
+              activation after checkout.
             </p>
           </article>
           <article className="content-card">
             <span className="content-kicker">Billing Model</span>
             <h3>One-time purchase ready</h3>
             <p>
-              The current site is written around a one-time purchase model, while
-              still leaving room to support premium or recurring billing later if
-              your commercial structure changes.
+              NovaCore is sold as a one-time purchase for $4.99. If new plans or
+              billing options are introduced later, pricing terms will be updated here.
             </p>
           </article>
-          <article className="content-card">
+          <article className="content-card gumroad-checkout-card">
             <span className="content-kicker">Secure Checkout</span>
-            <h3>Payment handled by your provider</h3>
-            <p>
-              Orders are processed through a secure checkout flow with payment
-              confirmation, invoice support, and fraud review where necessary to
+            <h3>Payment handled by Gumroad</h3>
+            <p className="gumroad-checkout-text">
+              Orders are processed through Gumroad's secure checkout with payment
+              confirmation, receipt delivery, and fraud review where necessary to
               protect both customers and the platform.
             </p>
           </article>
@@ -62,11 +62,11 @@ export default function PurchasePage() {
             <span className="content-kicker">What Happens After Payment</span>
             <h2>Delivery flow</h2>
             <ol className="content-number-list">
-              <li>The order is processed and confirmed through the checkout provider.</li>
-              <li>The customer receives purchase confirmation and installer access.</li>
+              <li>The order is processed and confirmed through Gumroad.</li>
+              <li>The customer receives a Gumroad receipt and installer access.</li>
               <li>NovaCore is downloaded and installed on the target Windows system.</li>
               <li>The product is activated through the NovaCore license or account flow.</li>
-              <li>Premium access unlocks and the customer can begin using the app.</li>
+              <li>Full access unlocks and the customer can begin using the app.</li>
             </ol>
           </article>
           <article className="content-card">
@@ -75,7 +75,7 @@ export default function PurchasePage() {
             <div className="content-list-block">
               <div>
                 <strong>Support contact</strong>
-                <p>Use `support@novacore.app` for order questions, delivery problems, or pre-sale clarification.</p>
+                <p>Use `support@novacore.app` for order questions, Gumroad receipt issues, or pre-sale clarification.</p>
               </div>
               <div>
                 <strong>Refund route</strong>
@@ -96,8 +96,8 @@ export default function PurchasePage() {
             <span className="content-kicker">Questions before checkout?</span>
             <h2>Customers should never have to guess what happens after payment</h2>
             <p>
-              The purchase, support, and activation pages now work together so the
-              buying flow feels commercially polished and ready for launch.
+              The purchase, support, and activation pages are here so you can
+              verify details, confirm compatibility, and get help before buying.
             </p>
           </div>
           <div className="cta-band-actions">

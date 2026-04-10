@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ContentPage, buildMetadata } from "@/components/ui/content-page";
 import { Container } from "@/components/ui/container";
+import { gumroadLink } from "@/lib/site-content";
 
 export const metadata: Metadata = buildMetadata(
   "Download",
@@ -18,9 +19,9 @@ export default function DownloadPage() {
           Download <span>NovaCore</span>
         </>
       }
-      description="Everything customers need before installation: version details, compatibility, setup guidance, release notes structure, and activation next steps."
+      description="Everything customers need before installation: version details, compatibility, setup guidance, release notes, and activation next steps."
       actions={[
-        { href: "/purchase", label: "Purchase NovaCore" },
+        { href: gumroadLink, label: "Purchase NovaCore" },
         { href: "/activate", label: "Activation Help", variant: "secondary" },
       ]}
     >
@@ -33,9 +34,14 @@ export default function DownloadPage() {
               The current public build includes the latest launcher, activation
               flow, and onboarding improvements for supported Windows systems.
             </p>
-            <Link href="/purchase" className="inline-action-link">
+            <a
+              href={gumroadLink}
+              className="inline-action-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Unlock Download Access
-            </Link>
+            </a>
           </article>
           <article className="content-card">
             <span className="content-kicker">Windows Compatibility</span>
@@ -46,9 +52,9 @@ export default function DownloadPage() {
             <span className="content-kicker">Security</span>
             <h3>Installer trust and signature status</h3>
             <p>
-              NovaCore installers are intended to be distributed with publisher
-              verification, release integrity checks, and clear version matching
-              between the website, installer, and activation flow.
+              Download only from official NovaCore links and confirm the version
+              matches the release notes on this page. Installer properties should
+              show the publisher and version details.
             </p>
           </article>
         </div>
@@ -62,7 +68,7 @@ export default function DownloadPage() {
             <ol className="content-number-list">
               <li>Download the latest NovaCore installer after purchase or account verification.</li>
               <li>Run the installer and approve any standard Windows permissions required for setup.</li>
-              <li>Launch NovaCore, sign in if your final release uses account-backed delivery, and enter your license if prompted.</li>
+              <li>Launch NovaCore, sign in if required, and enter your license if prompted.</li>
               <li>Complete activation and review the first-run guidance before applying performance profiles or tweaks.</li>
             </ol>
           </article>

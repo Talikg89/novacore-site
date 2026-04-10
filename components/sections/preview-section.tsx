@@ -7,8 +7,8 @@ export function PreviewSection() {
     <Container id="preview">
       <SectionHeading
         eyebrow="Product Preview"
-        title="A serious performance dashboard identity, designed to feel fast before the first benchmark."
-        description="These preview panels now lean into telemetry, tuning visibility, and competitive-readiness metrics so the product feels credible to gamers and low-latency enthusiasts even before real screenshots are added."
+        title="Performance dashboards built for visibility and control."
+        description="Preview how NovaCore organizes frame pacing, latency focus, and activation status in a single desktop view."
       />
       <div className="preview-grid">
         {previewPanels.map((panel) => (

@@ -12,7 +12,7 @@ const sections = [
   {
     title: "1. Who this policy applies to",
     body: [
-      "This Privacy Policy explains how NovaCore Labs LLC collects, uses, stores, and protects personal information in connection with the NovaCore website, desktop application, purchase flow, and customer support channels.",
+      "This Privacy Policy explains how NovaCore collects, uses, stores, and protects personal information in connection with the NovaCore website, desktop application, purchase flow, and customer support channels.",
       "It applies to visitors, customers, license holders, and anyone who contacts NovaCore support or interacts with our download and activation experience.",
     ],
   },
@@ -21,7 +21,7 @@ const sections = [
     body: [
       "We may collect contact information such as your name, email address, and support communications when you submit forms, contact support, or manage a purchase.",
       "We may collect account and authentication data used to verify ownership, restore purchases, secure access, and validate software activation.",
-      "We may collect payment and billing records provided by checkout partners, such as purchase confirmation details, transaction identifiers, invoice data, and subscription or one-time purchase status. NovaCore should not store full payment card data directly unless your payment provider specifically supports it and your compliance process allows it.",
+      "We may collect payment and billing records provided by Gumroad, such as purchase confirmation details, transaction identifiers, invoice data, and one-time purchase status. NovaCore does not store full payment card numbers; payments are handled by Gumroad.",
       "We may collect analytics and usage information such as page visits, download events, referral sources, support interactions, feature usage trends, and general product engagement metrics.",
       "We may collect device and app data needed to deliver the software and support the product, including app version, Windows version, hardware identifiers used for activation, installation status, crash details, diagnostic logs, and high-level device environment details relevant to troubleshooting.",
     ],
@@ -29,7 +29,7 @@ const sections = [
   {
     title: "3. How we use data",
     body: [
-      "NovaCore may use collected information to process purchases, deliver download access, verify licenses, activate premium access, support account recovery, respond to support requests, improve product stability, prevent abuse, and maintain service security.",
+      "NovaCore may use collected information to process purchases, deliver download access, verify licenses, activate licensed access, support account recovery, respond to support requests, improve product stability, prevent abuse, and maintain service security.",
       "We may also use information to understand how customers interact with the software and website, measure product quality, improve documentation, reduce friction in activation and onboarding, and communicate important service updates.",
     ],
   },
@@ -37,7 +37,7 @@ const sections = [
     title: "4. Third-party services",
     body: [
       "NovaCore may rely on third-party providers for payment processing, hosting, email delivery, analytics, crash reporting, support tooling, or licensing infrastructure. Those providers may process information on our behalf under their own terms and privacy practices.",
-      "These providers help NovaCore process payments securely, deliver transactional email, host parts of the service, measure site usage, and manage support operations. We only work with service providers that support commercially reasonable privacy and security standards.",
+      "Gumroad helps NovaCore process payments securely and deliver transactional emails. We also work with providers that support commercially reasonable privacy and security standards for hosting, analytics, and support operations.",
     ],
   },
   {
@@ -64,7 +64,7 @@ const sections = [
   {
     title: "8. Contact information",
     body: [
-      "For privacy questions, requests, or complaints, contact `legal@novacore.app` or write to NovaCore Labs LLC, 1280 Harbor Center Drive, Suite 400, Wilmington, Delaware 19801, United States.",
+      "For privacy questions, requests, or complaints, contact `legal@novacore.app` or write to NovaCore, Tel Aviv, Israel.",
       "If you also need account, billing, or license help, contact `support@novacore.app`.",
     ],
   },
@@ -79,7 +79,7 @@ export default function PrivacyPage() {
           Privacy <span>Policy</span>
         </>
       }
-      description="This policy is written for a commercial software launch and covers the kinds of customer, billing, app, and support data NovaCore may process."
+      description="This policy explains what information NovaCore collects, how it is used, and how privacy requests are handled."
       actions={[
         { href: "/contact", label: "Privacy Questions" },
         { href: "/terms", label: "View Terms", variant: "secondary" },

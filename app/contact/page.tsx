@@ -46,7 +46,7 @@ export default function ContactPage() {
           Contact <span>NovaCore Support</span>
         </>
       }
-      description="Reach the NovaCore team for setup help, purchase questions, activation recovery, technical troubleshooting, and refund requests. The support experience is designed to feel clear, trustworthy, and fast."
+      description="Reach the NovaCore team for setup help, purchase questions, activation recovery, technical troubleshooting, and refund requests."
       actions={[
         { href: "/download", label: "Go to Download" },
         { href: "/", label: "Back to Home", variant: "secondary" },
@@ -56,7 +56,7 @@ export default function ContactPage() {
         <div className="content-page-grid content-page-grid-2">
           <article className="content-card content-card-highlight">
             <span className="content-kicker">Expected Response Time</span>
-            <h2>Replies within 1 business day</h2>
+            <h2>Typical replies within 1 business day</h2>
             <p>
               Most support tickets receive a reply within 24 hours on business
               days. Activation and purchase issues are prioritized so customers
@@ -71,9 +71,9 @@ export default function ContactPage() {
             <span className="content-kicker">Best Way To Get Help</span>
             <h2>Include order and device details</h2>
             <p>
-              To speed things up, include your order or license ID, Windows
-              version, a short description of the issue, and any screenshots or
-              error text that help us reproduce the problem.
+              To speed things up, include your Gumroad receipt ID or license ID,
+              Windows version, a short description of the issue, and any
+              screenshots or error text that help us reproduce the problem.
             </p>
             <div className="content-link-list">
               <Link href="/activate">License & Activation Help</Link>
@@ -89,7 +89,7 @@ export default function ContactPage() {
           <h2>
             Support <span>Categories</span>
           </h2>
-          <p>Choose the category that best matches your request so the issue reaches the right queue faster.</p>
+          <p>Choose the category that best matches your request so it reaches the right support path faster.</p>
         </div>
         <div className="content-page-grid content-page-grid-5">
           {supportCards.map((card) => (
@@ -107,11 +107,15 @@ export default function ContactPage() {
             <span className="content-kicker">Contact Form</span>
             <h2>Send a detailed support request</h2>
             <p>
-              This form layout is ready for a future live submission workflow and
-              already reflects the details a real support team needs to resolve
-              customer issues efficiently.
+              Use the form below or email `support@novacore.app`. Include order
+              details and device notes so support can respond quickly.
             </p>
-            <form className="support-form" action="#">
+            <form
+              className="support-form"
+              action="mailto:support@novacore.app"
+              method="post"
+              encType="text/plain"
+            >
               <div className="support-form-grid">
                 <label className="field">
                   <span>Name</span>
@@ -142,11 +146,11 @@ export default function ContactPage() {
               </label>
               <div className="form-footer">
                 <p>
-                  Support requests can be sent through this form layout or by
-                  email at `support@novacore.app` for direct assistance.
+                  Support replies are sent by email. For fastest help, include
+                  your Gumroad receipt ID or license ID in the message.
                 </p>
                 <button type="submit" className="hero-button hero-button-primary">
-                  Submit Request
+                  Send Email
                 </button>
               </div>
             </form>
@@ -159,7 +163,7 @@ export default function ContactPage() {
               <p>
                 Need help with an order, invoice, checkout issue, or missing
                 confirmation? Start with `support@novacore.app` and include the
-                purchase email used at checkout.
+                purchase email used at checkout and your Gumroad receipt ID.
               </p>
             </article>
             <article className="content-card">

@@ -8,7 +8,7 @@ export function TestimonialsSection() {
         <h2>
           What Our <span>Customers Say</span>
         </h2>
-        <p>Real feedback from gamers who want stronger FPS, lower latency, and a faster-feeling PC.</p>
+        <p>Feedback highlights from players who want a cleaner, more responsive setup.</p>
       </div>
       <div className="testimonial-grid">
         {testimonials.map((item) => (

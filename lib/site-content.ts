@@ -7,47 +7,49 @@ export const navLinks = [
   { href: "#faq", label: "FAQ" },
 ] as const;
 
+export const gumroadLink = "https://talverse.gumroad.com/l/bidpof";
+
 export const heroStats = [
-  { value: "10,000+", label: "Gamers Optimized" },
-  { value: "50,000+", label: "Systems Tuned" },
+  { value: "One-time purchase", label: "No recurring fees" },
+  { value: "Windows 10/11", label: "Designed for modern rigs" },
 ] as const;
 
 export const featureCards = [
   {
     tag: "FPS",
-    title: "FPS-focused optimization",
+    title: "Frame pacing optimization",
     description:
-      "Reduce unnecessary system overhead, streamline heavy background behavior, and push Windows toward smoother frame delivery during gameplay.",
+      "Reduce unnecessary system overhead and streamline background behavior so gameplay feels steadier and more consistent.",
   },
   {
     tag: "Latency",
-    title: "Low-latency system tuning",
+    title: "Responsiveness tuning",
     description:
-      "Target responsiveness across input handling, service load, and OS behavior so the system feels tighter in competitive play.",
+      "Target input handling, service load, and OS behavior so the system feels more responsive in competitive play.",
   },
   {
     tag: "Processes",
-    title: "Background and startup reduction",
+    title: "Background and startup cleanup",
     description:
-      "Cut startup drag, trim noisy processes, and reduce wasted resources that steal headroom from games and real-time workloads.",
+      "Trim noisy processes, reduce startup drag, and keep more resources available for games and real-time workloads.",
   },
   {
     tag: "Power",
-    title: "Power and device behavior tuning",
+    title: "Performance power profiles",
     description:
-      "Switch into stronger power profiles and tune desktop behavior for a more aggressive performance posture when it matters.",
+      "Switch into performance-focused power profiles and tune desktop behavior for higher consistency under load.",
   },
   {
     tag: "Network",
-    title: "Network and ping-aware optimization",
+    title: "Network tuning guidance",
     description:
-      "Support low-latency players with tuning paths that help reduce avoidable network overhead and keep online play feeling cleaner.",
+      "Support low-latency play with tuning paths that reduce avoidable network overhead and keep online sessions consistent.",
   },
   {
     tag: "Protection",
-    title: "One-device license protection",
+    title: "Single-device license",
     description:
-      "Keep the commercial model simple: one personal license key, one protected device, and direct activation expectations.",
+      "Keep licensing simple with one personal key, one protected device, and clear activation expectations.",
   },
 ] as const;
 
@@ -58,9 +60,9 @@ export const previewPanels = [
     description:
       "A more competitive-facing overview of frame pacing, overhead, startup drag, and optimization readiness.",
     rows: [
-      { label: "Average frame stability", value: "96%" },
-      { label: "Optimization score", value: "92 / 100" },
-      { label: "Startup impact", value: "Low" },
+      { label: "Frame pacing", value: "Stabilized" },
+      { label: "Optimization status", value: "Tuned" },
+      { label: "Startup impact", value: "Reduced" },
     ],
   },
   {
@@ -69,16 +71,16 @@ export const previewPanels = [
     description:
       "Surface the metrics performance users actually care about: response time, ping behavior, and overhead that affects feel.",
     rows: [
-      { label: "System latency", value: "4.8 ms" },
-      { label: "Ping path", value: "18 ms stable" },
-      { label: "Input response mode", value: "Aggressive" },
+      { label: "System latency", value: "Tuned" },
+      { label: "Network path", value: "Stable" },
+      { label: "Input response mode", value: "Focus" },
     ],
   },
   {
     badge: "License Surface",
     title: "Activation and machine status",
     description:
-      "Keep the commercial side premium too, with a license view that feels secure, deliberate, and part of a real desktop product.",
+      "Keep the commercial side polished too, with a license view that feels secure, deliberate, and part of a real desktop product.",
     rows: [
       { label: "License key", value: "Personal" },
       { label: "Activation state", value: "Verified" },
@@ -91,12 +93,12 @@ export const howItWorksSteps = [
   {
     title: "Buy NovaCore",
     description:
-      "Purchase NovaCore once as a premium gaming and Windows performance utility.",
+      "Purchase NovaCore once for $4.99 as a performance-focused gaming and Windows utility.",
   },
   {
     title: "Receive download and personal license key",
     description:
-      "After checkout, the buyer receives installer access and a personal activation key.",
+      "After Gumroad checkout, the buyer receives installer access and a personal activation key.",
   },
   {
     title: "Install the desktop app",
@@ -122,65 +124,65 @@ export const howItWorksSteps = [
 
 export const benefitCards = [
   {
-    title: "Increase FPS",
+    title: "Smoother frame pacing",
     description:
-      "Free up CPU and memory overhead, tune startup behavior, and push smoother frame delivery where it matters most.",
+      "Free up CPU and memory overhead and tune startup behavior to keep frames steadier in play.",
   },
   {
-    title: "Decrease Ping",
+    title: "Cleaner network behavior",
     description:
-      "Improve network consistency with cleaner routing, background traffic reduction, and latency-aware system tweaks.",
+      "Improve network consistency with cleaner routing, background traffic reduction, and smarter system tweaks.",
   },
   {
-    title: "Reduce Latency",
+    title: "Tighter input response",
     description:
-      "Cut input delay and sharpen system response with gaming-focused tuning across timers, processes, and Windows behavior.",
+      "Sharpen system response with performance tuning across timers, processes, and Windows behavior.",
   },
   {
-    title: "Boost Responsiveness",
+    title: "Faster-feeling system",
     description:
-      "Get a PC that feels tighter in menus, in fights, and under pressure with cleaner background load and aggressive tuning.",
+      "Get a PC that feels more focused in menus, in matches, and under pressure with cleaner background load.",
   },
 ] as const;
 
 export const trustedCreators = [
-  { name: "Bandzrt", role: "Content Creator", accent: "ember" },
-  { name: "Skayter", role: "Fortnite Pro", accent: "sand" },
-  { name: "Chica", role: "Streamer", accent: "rose" },
-  { name: "Kirilian", role: "Fortnite Pro", accent: "cyan" },
-  { name: "NinjSZN", role: "Content Creator", accent: "mono" },
+  { name: "Competitive Players", role: "Low-latency focus", accent: "ember" },
+  { name: "Creators", role: "Performance tuning", accent: "sand" },
+  { name: "Power Users", role: "System control", accent: "rose" },
+  { name: "LAN Setups", role: "Stable builds", accent: "cyan" },
+  { name: "Community", role: "Performance-minded", accent: "mono" },
 ] as const;
 
 export const gameBenchmarks = [
-  { game: "Fortnite", increase: "+39%", withTweaks: "542 FPS", withoutTweaks: "389 FPS" },
-  { game: "Valorant", increase: "+39%", withTweaks: "612 FPS", withoutTweaks: "440 FPS" },
-  { game: "Minecraft", increase: "+107%", withTweaks: "1151 FPS", withoutTweaks: "556 FPS" },
-  { game: "Roblox", increase: "+158%", withTweaks: "310 FPS", withoutTweaks: "120 FPS" },
-  { game: "Call of Duty Warzone", increase: "+53%", withTweaks: "260 FPS", withoutTweaks: "170 FPS" },
-  { game: "Call of Duty", increase: "+40%", withTweaks: "365 FPS", withoutTweaks: "260 FPS" },
+  { game: "Fortnite", increase: "Focus", withTweaks: "Stable pacing", withoutTweaks: "Baseline settings" },
+  { game: "Valorant", increase: "Focus", withTweaks: "Lower overhead", withoutTweaks: "Default setup" },
+  { game: "Minecraft", increase: "Focus", withTweaks: "Lean background load", withoutTweaks: "Standard load" },
+  { game: "Roblox", increase: "Focus", withTweaks: "Clean startup path", withoutTweaks: "Typical startup" },
+  { game: "Call of Duty Warzone", increase: "Focus", withTweaks: "Latency focus", withoutTweaks: "Default network" },
+  { game: "Call of Duty", increase: "Focus", withTweaks: "Input response tuned", withoutTweaks: "Baseline input" },
 ] as const;
 
 export const testimonials = [
   {
-    tag: "Performance",
-    title: "Massive performance improvement",
+    tag: "Responsiveness",
+    title: "The system feels tighter",
     body:
-      "NovaCore helped clean up startup drag, sharpen overall system feel, and gave me noticeably better in-game consistency.",
-    author: "young bt",
+      "NovaCore helped me reduce background noise and keep the system feeling more consistent during longer sessions.",
+    author: "NovaCore user",
   },
   {
-    tag: "Aim",
-    title: "The game feels tighter",
+    tag: "Stability",
+    title: "Cleaner startup and fewer distractions",
     body:
-      "The biggest difference was responsiveness. Menus, edits, and fights all felt cleaner after tuning the machine with NovaCore.",
-    author: "wave",
+      "The setup feels more focused now, with fewer processes running and a clearer sense of control over performance settings.",
+    author: "NovaCore user",
   },
   {
-    tag: "Extreme",
-    title: "Lower ping and stronger FPS",
+    tag: "Control",
+    title: "Clearer performance tuning",
     body:
-      "I saw a real drop in latency and a smoother experience overall. It finally felt like the PC was tuned for competitive play.",
-    author: "Prismatic",
+      "The interface makes it easier to understand what is changing and why, without guessing what settings were touched.",
+    author: "NovaCore user",
   },
 ] as const;
 
@@ -188,21 +190,21 @@ export const faqItems = [
   {
     question: "Can this harm my computer?",
     answer:
-      "NovaCore is presented as a guided optimization utility, with a cleaner commercial product flow and restore-aware approach rather than risky blind tweaking.",
+      "NovaCore focuses on guided settings with clear descriptions. If you are unsure about a change, review the guidance first or contact support.",
   },
   {
     question: "Is this bannable?",
     answer:
-      "NovaCore is positioned around Windows and system optimization, not cheats or in-game exploits. The goal is performance tuning, lower overhead, and cleaner responsiveness.",
+      "NovaCore focuses on Windows and system optimization rather than game file modification or cheats. Always follow the rules of the game you play.",
   },
   {
     question: "Are these legit gains?",
     answer:
-      "The site presents NovaCore around measurable performance categories like FPS, latency, and startup overhead, with test-style benchmark cards to support the value proposition.",
+      "Results vary by hardware, Windows state, and the game being played. NovaCore focuses on stability and responsiveness rather than guaranteeing specific numbers.",
   },
   {
     question: "Is it worth it?",
     answer:
-      "For players who care about smoother frames, lower delay, and cleaner competitive responsiveness, NovaCore is framed as a one-time purchase desktop optimization tool rather than a recurring service.",
+      "If you want a cleaner Windows setup and a centralized performance tuning tool, the one-time purchase can be a good fit. See the refund policy for eligibility details.",
   },
 ] as const;

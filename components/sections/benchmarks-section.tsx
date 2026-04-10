@@ -6,9 +6,9 @@ export function BenchmarksSection() {
     <Container className="stack-section">
       <div className="section-copy section-copy-centered">
         <h2>
-          Tests In Your <span>Favorite Games</span>
+          Optimization Focus By <span>Game</span>
         </h2>
-        <p>See the real performance gains we frame around our optimization story.</p>
+        <p>Examples of tuning priorities and system focus areas across popular titles.</p>
       </div>
       <div className="benchmark-grid">
         {gameBenchmarks.map((benchmark) => (
@@ -18,17 +18,19 @@ export function BenchmarksSection() {
               <span className="benchmark-badge">{benchmark.increase}</span>
             </div>
             <div className="benchmark-row">
-              <span>With NovaCore</span>
+              <span>NovaCore focus</span>
               <strong>{benchmark.withTweaks}</strong>
             </div>
             <div className="benchmark-row">
-              <span>Without</span>
+              <span>Baseline</span>
               <strong className="benchmark-muted">{benchmark.withoutTweaks}</strong>
             </div>
           </article>
         ))}
       </div>
-      <div className="benchmark-note">Tested on high-performance Windows gaming hardware.</div>
+      <div className="benchmark-note">
+        Example profiles shown for context. Actual results vary by system and game.
+      </div>
     </Container>
   );
 }

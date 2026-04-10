@@ -10,7 +10,7 @@ export function BenefitsSection() {
         </h2>
         <p>
           Experience a sharper gaming setup with focused desktop optimization for
-          smoother frames, lower delay, and cleaner system behavior.
+          smoother frames, tighter response, and cleaner system behavior.
         </p>
       </div>
       <div className="benefits-grid">

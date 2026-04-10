@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navLinks } from "@/lib/site-content";
+import { gumroadLink, navLinks } from "@/lib/site-content";
 
 export function SiteHeader() {
   return (
@@ -20,9 +20,14 @@ export function SiteHeader() {
           <Link href="/download" className="nav-action">
             Download
           </Link>
-          <Link href="/purchase" className="nav-action nav-action-primary">
+          <a
+            href={gumroadLink}
+            className="nav-action nav-action-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Buy
-          </Link>
+          </a>
         </div>
       </div>
     </header>

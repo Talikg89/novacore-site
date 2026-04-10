@@ -12,7 +12,7 @@ const sections = [
   {
     title: "1. Agreement to the terms",
     body: [
-      "These Terms of Service govern use of the NovaCore website, software, downloads, licensing systems, support channels, and related services provided by NovaCore Labs LLC. By accessing NovaCore, you agree to these terms.",
+      "These Terms of Service govern use of the NovaCore website, software, downloads, licensing systems, support channels, and related services provided by NovaCore. By accessing NovaCore, you agree to these terms.",
     ],
   },
   {
@@ -32,7 +32,7 @@ const sections = [
     title: "4. License terms",
     body: [
       "NovaCore is licensed, not sold. Your purchase grants a limited, revocable, non-transferable license to use the software according to the plan or license type you purchased.",
-      "License scope may include device-based activation, account-linked access, version entitlement rules, or premium feature unlock conditions. Unauthorized sharing, resale, or misuse of keys or accounts may result in suspension or termination.",
+      "License scope may include device-based activation, account-linked access, version entitlement rules, or feature unlock conditions. Unauthorized sharing, resale, or misuse of keys or accounts may result in suspension or termination.",
     ],
   },
   {
@@ -42,10 +42,10 @@ const sections = [
     ],
   },
   {
-    title: "6. Payments, subscriptions, and premium access",
+    title: "6. Payments and access",
     body: [
-      "NovaCore may be sold as a one-time purchase, premium product, or subscription-backed service depending on the final commercial model. Prices, billing cycles, taxes, and purchase terms displayed at checkout control the transaction.",
-      "Premium access begins after successful payment verification and may depend on activation, account status, and device validation.",
+      "NovaCore is currently sold as a one-time purchase. Prices, taxes, and purchase terms displayed in the Gumroad checkout control the transaction.",
+      "Access begins after successful payment verification and may depend on activation, account status, and device validation.",
     ],
   },
   {
@@ -64,14 +64,14 @@ const sections = [
   {
     title: "9. Limitation of liability",
     body: [
-      "To the maximum extent permitted by law, NovaCore Labs LLC will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of profits, revenue, data, goodwill, or business interruption arising from use of NovaCore.",
+      "To the maximum extent permitted by law, NovaCore will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of profits, revenue, data, goodwill, or business interruption arising from use of NovaCore.",
       "Where legally permitted, total liability is limited to the amount paid by the customer for the applicable product or service during the relevant claim period.",
     ],
   },
   {
     title: "10. Contact information",
     body: [
-      "Questions about these terms can be sent to `legal@novacore.app` or mailed to NovaCore Labs LLC, 1280 Harbor Center Drive, Suite 400, Wilmington, Delaware 19801, United States. Product and billing support requests should go to `support@novacore.app`.",
+      "Questions about these terms can be sent to `legal@novacore.app` or mailed to NovaCore, Tel Aviv, Israel. Product and billing support requests should go to `support@novacore.app`.",
     ],
   },
 ] as const;
@@ -85,9 +85,9 @@ export default function TermsPage() {
           Terms of <span>Service</span>
         </>
       }
-      description="These terms are structured for a real software product launch and cover software use, licensing, payments, premium access, and service limitations."
+      description="These terms cover software use, licensing, payments, product access, and service limitations."
       actions={[
-        { href: "/purchase", label: "Purchase Information" },
+        { href: "/pricing", label: "Pricing" },
         { href: "/privacy", label: "Privacy Policy", variant: "secondary" },
       ]}
     >
@@ -99,7 +99,7 @@ export default function TermsPage() {
           </div>
           <p>
             These terms apply to the NovaCore website, software downloads,
-            licensing systems, checkout flow, and customer support services.
+            licensing systems, Gumroad checkout flow, and customer support services.
           </p>
         </article>
       </Container>

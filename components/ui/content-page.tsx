@@ -40,6 +40,8 @@ export function ContentPage({
   actions = [],
   children,
 }: ContentPageProps) {
+  const isExternalLink = (href: string) => href.startsWith("http");
+
   return (
     <main className="page-shell">
       <SiteHeader />
@@ -50,19 +52,36 @@ export function ContentPage({
           <p className="content-page-description">{description}</p>
           {actions.length > 0 ? (
             <div className="content-page-actions">
-              {actions.map((action) => (
-                <Link
-                  key={`${action.href}-${action.label}`}
-                  href={action.href}
-                  className={
-                    action.variant === "secondary"
-                      ? "hero-button hero-button-secondary"
-                      : "hero-button hero-button-primary"
-                  }
-                >
-                  {action.label}
-                </Link>
-              ))}
+              {actions.map((action) => {
+                const className =
+                  action.variant === "secondary"
+                    ? "hero-button hero-button-secondary"
+                    : "hero-button hero-button-primary";
+
+                if (isExternalLink(action.href)) {
+                  return (
+                    <a
+                      key={`${action.href}-${action.label}`}
+                      href={action.href}
+                      className={className}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {action.label}
+                    </a>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={`${action.href}-${action.label}`}
+                    href={action.href}
+                    className={className}
+                  >
+                    {action.label}
+                  </Link>
+                );
+              })}
             </div>
           ) : null}
         </div>

@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { gumroadLink } from "@/lib/site-content";
 
 export function PricingSection() {
   return (
@@ -8,7 +8,7 @@ export function PricingSection() {
       <SectionHeading
         eyebrow="Pricing"
         title="Buy the optimizer once and keep the tuning stack on your machine."
-        description="NovaCore is positioned like enthusiast software, not a service plan. The purchase language stays direct: pay once, receive the app, get your personal license key, and download the desktop tool."
+        description="NovaCore is a one-time purchase. Pay once, receive the app, get your personal license key, and download the desktop tool."
       />
       <div className="pricing-wrap">
         <article className="panel pricing-card">
@@ -16,7 +16,7 @@ export function PricingSection() {
             <span className="pricing-label">NovaCore Personal</span>
             <h3 className="pricing-title">Premium gaming and Windows performance tuner</h3>
             <p>
-              A one-time purchase for gamers and power users who want FPS-focused
+              A one-time purchase for gamers and power users who want performance-focused
               optimization, lower overhead, cleaner startup behavior, tuning
               control, and license-protected activation.
             </p>
@@ -33,13 +33,19 @@ export function PricingSection() {
               <li>Download access after purchase</li>
             </ul>
           </div>
+          <p className="pricing-trust-text">Secure checkout via Gumroad - Instant access after purchase.</p>
           <div className="cta-row">
-            <Link href="/download" className="button button-primary">
+            <a
+              href={gumroadLink}
+              className="button button-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Buy NovaCore
-            </Link>
-            <Link href="#faq" className="button button-secondary">
+            </a>
+            <a href="#faq" className="button button-secondary">
               View License FAQ
-            </Link>
+            </a>
           </div>
         </article>
       </div>

@@ -884,6 +884,12 @@ button {
   margin-top: 10px;
 }
 
+.pricing-trust-text {
+  margin-top: 18px;
+  color: #a7adb6;
+  font-size: 0.92rem;
+}
+
 .timeline-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1358,6 +1364,13 @@ button {
   text-align: center;
 }
 
+.hero-preview-note {
+  margin-top: 14px;
+  color: rgba(227, 234, 247, 0.65);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
 .hero-preview-frame-clean {
   padding: 18px;
   border-radius: 28px;
@@ -1549,6 +1562,13 @@ button {
 }
 
 .stars {
+  color: transparent;
+  letter-spacing: 0.08em;
+  position: relative;
+}
+
+.stars::before {
+  content: "5/5";
   color: #ffd84d;
   letter-spacing: 0.08em;
 }
@@ -1915,6 +1935,14 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
+}
+
+.gumroad-checkout-text {
+  margin: 0;
+}
+
+.refund-processing-text {
+  margin: 0;
 }
 
 @media (max-width: 960px) {

@@ -13,7 +13,7 @@ const faqItems = [
   {
     question: "What does NovaCore do?",
     answer:
-      "NovaCore is a Windows optimization product built for gamers and performance-focused users. It is positioned around reducing overhead, improving responsiveness, cleaning startup behavior, and helping users tune their systems for smoother play.",
+      "NovaCore is a Windows optimization product built for gamers and performance-focused users. It reduces overhead, cleans up startup behavior, and helps you tune your system for a smoother feel.",
   },
   {
     question: "Who is NovaCore for?",
@@ -28,7 +28,7 @@ const faqItems = [
   {
     question: "How does purchase work?",
     answer:
-      "Customers purchase NovaCore through the checkout flow, receive access to the installer, and then activate the product using the standard NovaCore license delivery and validation process.",
+      "Customers purchase NovaCore for $4.99 through Gumroad checkout, receive a receipt and installer access, and then activate the product using the NovaCore license delivery and validation process.",
   },
   {
     question: "How does license activation work?",
@@ -38,17 +38,17 @@ const faqItems = [
   {
     question: "Will NovaCore boost FPS?",
     answer:
-      "NovaCore is marketed around improving system conditions that can help frame stability, responsiveness, startup load, and background overhead. Actual results depend on hardware, Windows state, installed software, and the game being played.",
+      "NovaCore focuses on system conditions that can help frame stability, responsiveness, startup load, and background overhead. Results depend on hardware, Windows state, installed software, and the game being played.",
   },
   {
     question: "Are the tweaks safe?",
     answer:
-      "NovaCore is presented as a guided commercial product, not a random tweak pack. Customers should still review guidance, understand compatibility, and contact support if they are unsure about a change on their machine.",
+      "NovaCore is a guided commercial product, not a random tweak pack. Customers should review guidance, confirm compatibility, and contact support if they are unsure about a change on their machine.",
   },
   {
     question: "How do refunds work?",
     answer:
-      "Refunds are handled according to the dedicated Refund Policy, which should define timing, eligibility, and how to submit a request through support.",
+      "Refunds are handled according to the dedicated Refund Policy, which defines timing, eligibility, and how to submit a request through support.",
   },
   {
     question: "How does support work?",
@@ -66,7 +66,7 @@ export default function FaqPage() {
           Frequently Asked <span>Questions</span>
         </>
       }
-      description="This standalone FAQ page gives NovaCore a proper knowledge base entry point for buyers, customers, and users evaluating activation, safety, support, and system fit."
+      description="Clear answers about NovaCore, system requirements, activation, refunds, and support."
       actions={[
         { href: "/contact", label: "Contact Support" },
         { href: "/download", label: "Go to Download", variant: "secondary" },

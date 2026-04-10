@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | NovaCore",
   },
   description:
-    "NovaCore is a premium Windows optimization suite for gamers and performance-focused users who care about FPS, latency, responsiveness, and clean system tuning.",
+    "NovaCore is a premium Windows optimization suite for gamers and performance-focused users who want a cleaner, more responsive system.",
 };
 
 export default function RootLayout({

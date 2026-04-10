@@ -12,14 +12,16 @@ export function Footer() {
           </div>
           <p>
             Premium Windows optimization for gamers, competitive players, and
-            power users who care about FPS, latency, and system responsiveness.
+            power users who care about responsiveness, stability, and system tuning.
           </p>
         </div>
         <div className="footer-clean-columns">
           <nav className="footer-clean-links" aria-label="Product">
             <Link href="/download">Download</Link>
             <Link href="/pricing">Pricing</Link>
-            <Link href="/purchase">Purchase</Link>
+            <a href="https://talverse.gumroad.com/l/bidpof" target="_blank" rel="noopener noreferrer">
+              Buy
+            </a>
             <Link href="/activate">License Help</Link>
             <Link href="/faq">FAQ</Link>
           </nav>

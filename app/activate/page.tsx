@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/container";
 
 export const metadata: Metadata = buildMetadata(
   "License & Activation Help",
-  "Get help with NovaCore license delivery, activation steps, premium unlocks, failed activations, and purchase recovery.",
+  "Get help with NovaCore license delivery, activation steps, unlocks, failed activations, and purchase recovery.",
   "/activate",
 );
 
@@ -18,9 +18,9 @@ export default function ActivatePage() {
           License & <span>Activation Help</span>
         </>
       }
-      description="This page explains what happens after purchase, where customers enter their license, how premium unlock works, and what to do if activation fails."
+      description="This page explains what happens after purchase, where customers enter their license, how unlocks work, and what to do if activation fails."
       actions={[
-        { href: "/purchase", label: "View Purchase Flow" },
+        { href: "/pricing", label: "Pricing" },
         { href: "/contact", label: "Contact Support", variant: "secondary" },
       ]}
     >
@@ -34,7 +34,7 @@ export default function ActivatePage() {
               <li>The customer receives download access and license delivery instructions.</li>
               <li>NovaCore is downloaded and installed on the target Windows system.</li>
               <li>The customer signs in or enters the license through the activation screen inside the app.</li>
-              <li>Activation validates the purchase and unlocks premium access.</li>
+              <li>Activation validates the purchase and unlocks full access.</li>
             </ol>
           </article>
           <article className="content-card content-card-highlight">
@@ -43,7 +43,7 @@ export default function ActivatePage() {
             <p>
               Customers enter their license on the activation screen inside the
               NovaCore desktop app. The same area can also be used to sign in,
-              retry validation, and confirm that premium access has been unlocked.
+              retry validation, and confirm that full access has been unlocked.
             </p>
           </article>
         </div>
@@ -52,10 +52,10 @@ export default function ActivatePage() {
       <Container className="content-page-section">
         <div className="content-page-grid content-page-grid-3">
           <article className="content-card">
-            <span className="content-kicker">Premium Unlock</span>
+            <span className="content-kicker">Full Access Unlock</span>
             <h3>Access begins after validation</h3>
             <p>
-              Once the purchase is verified, NovaCore can unlock premium
+              Once the purchase is verified, NovaCore can unlock full
               functionality, updates, and any product features tied to the
               customer's plan or license type.
             </p>
@@ -74,8 +74,8 @@ export default function ActivatePage() {
             <h3>Use support with the order email</h3>
             <p>
               If the license email never arrived or the account can no longer be
-              accessed, contact support with the purchase email, order ID, and
-              any invoice details available.
+              accessed, contact support with the purchase email, Gumroad receipt
+              ID, and any invoice details available.
             </p>
           </article>
         </div>
