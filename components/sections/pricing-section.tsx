@@ -22,7 +22,7 @@ export function PricingSection() {
             </p>
           </div>
           <div className="pricing-price-block">
-            <span className="pricing-price">$49</span>
+            <span className="pricing-price">$4.99</span>
             <span className="pricing-note">One-time purchase</span>
           </div>
           <div className="pricing-includes">
