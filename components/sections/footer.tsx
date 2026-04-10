@@ -18,6 +18,7 @@ export function Footer() {
         <div className="footer-clean-columns">
           <nav className="footer-clean-links" aria-label="Product">
             <Link href="/download">Download</Link>
+            <Link href="/pricing">Pricing</Link>
             <Link href="/purchase">Purchase</Link>
             <Link href="/activate">License Help</Link>
             <Link href="/faq">FAQ</Link>
