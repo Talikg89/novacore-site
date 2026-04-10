@@ -3,6 +3,7 @@ import { BenefitsSection } from "@/components/sections/benefits-section";
 import { FaqSection } from "@/components/sections/faq-section";
 import { Footer } from "@/components/sections/footer";
 import { HeroSection } from "@/components/sections/hero-section";
+import { PricingSection } from "@/components/sections/pricing-section";
 import { SiteHeader } from "@/components/sections/site-header";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
 import { TrustedSection } from "@/components/sections/trusted-section";
@@ -15,6 +16,7 @@ export default function HomePage() {
       <BenefitsSection />
       <TrustedSection />
       <BenchmarksSection />
+      <PricingSection />
       <TestimonialsSection />
       <FaqSection />
       <Footer />
