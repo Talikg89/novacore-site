@@ -1,7 +1,10 @@
+﻿"use client";
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ContentPage, buildMetadata } from "@/components/ui/content-page";
 import { Container } from "@/components/ui/container";
+import { useState } from "react";
 
 export const metadata: Metadata = buildMetadata(
   "Contact & Support",
@@ -38,6 +41,72 @@ const supportCards = [
 ] as const;
 
 export default function ContactPage() {
+  const recipientEmail = "gurevich.tal@gmail.com";
+  const [formValues, setFormValues] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    orderId: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState<Record<string, string>>({});
+
+  const handleChange = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const { name, value } = event.target;
+    setFormValues((prev) => ({ ...prev, [name]: value }));
+    setErrors((prev) => {
+      if (!prev[name]) {
+        return prev;
+      }
+      const next = { ...prev };
+      delete next[name];
+      return next;
+    });
+  };
+
+  const handleSubmit = (event?: React.FormEvent<HTMLFormElement>) => {
+    if (event) {
+      event.preventDefault();
+    }
+
+    const nextErrors: Record<string, string> = {};
+    if (!formValues.name.trim()) {
+      nextErrors.name = "Name is required.";
+    }
+    if (!formValues.email.trim()) {
+      nextErrors.email = "Email is required.";
+    }
+    if (!formValues.subject.trim()) {
+      nextErrors.subject = "Subject is required.";
+    }
+    if (!formValues.message.trim()) {
+      nextErrors.message = "Message is required.";
+    }
+
+    if (Object.keys(nextErrors).length > 0) {
+      setErrors(nextErrors);
+      return;
+    }
+
+    const subject = formValues.subject.trim() || "NovaCore Support";
+    const body = [
+      `Name: ${formValues.name.trim()}`,
+      `Email: ${formValues.email.trim()}`,
+      `License ID: ${formValues.orderId.trim()}`,
+      "",
+      "Message:",
+      formValues.message.trim(),
+    ].join("\n");
+
+    const mailto = `mailto:${recipientEmail}?subject=${encodeURIComponent(
+      subject,
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailto;
+  };
+
   return (
     <ContentPage
       eyebrow="Support"
@@ -107,33 +176,71 @@ export default function ContactPage() {
             <span className="content-kicker">Contact Form</span>
             <h2>Send a detailed support request</h2>
             <p>
-              Use the form below or email `support@novacore.app`. Include order
+              Use the form below or email `gurevich.tal@gmail.com`. Include order
               details and device notes so support can respond quickly.
             </p>
             <form
               className="support-form"
-              action="mailto:support@novacore.app"
-              method="post"
-              encType="text/plain"
+              onSubmit={handleSubmit}
+              aria-label="Contact support"
             >
               <div className="support-form-grid">
                 <label className="field">
                   <span>Name</span>
-                  <input type="text" name="name" placeholder="Your name" />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    value={formValues.name}
+                    onChange={handleChange}
+                  />
+                  {errors.name ? (
+                    <span style={{ color: "#ff9aa9", fontSize: "0.85rem" }}>
+                      {errors.name}
+                    </span>
+                  ) : null}
                 </label>
                 <label className="field">
                   <span>Email</span>
-                  <input type="email" name="email" placeholder="you@example.com" />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    value={formValues.email}
+                    onChange={handleChange}
+                  />
+                  {errors.email ? (
+                    <span style={{ color: "#ff9aa9", fontSize: "0.85rem" }}>
+                      {errors.email}
+                    </span>
+                  ) : null}
                 </label>
               </div>
               <div className="support-form-grid">
                 <label className="field">
                   <span>Subject</span>
-                  <input type="text" name="subject" placeholder="How can we help?" />
+                  <input
+                    type="text"
+                    name="subject"
+                    placeholder="How can we help?"
+                    value={formValues.subject}
+                    onChange={handleChange}
+                  />
+                  {errors.subject ? (
+                    <span style={{ color: "#ff9aa9", fontSize: "0.85rem" }}>
+                      {errors.subject}
+                    </span>
+                  ) : null}
                 </label>
                 <label className="field">
                   <span>Order / License ID</span>
-                  <input type="text" name="orderId" placeholder="Optional" />
+                  <input
+                    type="text"
+                    name="orderId"
+                    placeholder="Optional"
+                    value={formValues.orderId}
+                    onChange={handleChange}
+                  />
                 </label>
               </div>
               <label className="field">
@@ -142,7 +249,14 @@ export default function ContactPage() {
                   name="message"
                   rows={8}
                   placeholder="Describe the issue, what you expected, and any errors you saw."
+                  value={formValues.message}
+                  onChange={handleChange}
                 />
+                {errors.message ? (
+                  <span style={{ color: "#ff9aa9", fontSize: "0.85rem" }}>
+                    {errors.message}
+                  </span>
+                ) : null}
               </label>
               <div className="form-footer">
                 <p>
