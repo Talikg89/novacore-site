@@ -96,7 +96,14 @@ export function ContactClient() {
       subject,
     )}&body=${encodeURIComponent(body)}`;
 
-    window.location.assign(mailto);
+    const anchor = document.createElement("a");
+    anchor.href = mailto;
+    anchor.rel = "noreferrer";
+    anchor.style.display = "none";
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+    window.location.href = mailto;
   };
 
   return (
