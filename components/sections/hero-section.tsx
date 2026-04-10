@@ -29,14 +29,14 @@ export function HeroSection() {
       <div className="hero-badge">Faster, smoother, sharper</div>
       <div className="hero-content-centered">
         <h1>
-          Optimize <span>your PC</span> for
+          <span>NovaCore Tweaks</span> for
           <br />
-          Gaming
+          Gaming Performance
         </h1>
         <p>
-          NovaCore removes bloat, reduces background overhead, and tunes Windows
-          for steadier frame pacing, cleaner background behavior, and a more
-          responsive competitive setup.
+          NovaCore Tweaks delivers premium Windows optimization and system tweaks
+          that help boost FPS, reduce input lag, and keep gaming performance
+          steady for competitive play.
         </p>
         <div className="hero-buttons">
           <a
@@ -47,8 +47,8 @@ export function HeroSection() {
           >
             Buy NovaCore
           </a>
-          <Link href="#benefits" className="hero-button hero-button-secondary">
-            Explore Features
+          <Link href="/tweaks" className="hero-button hero-button-secondary">
+            Explore NovaCore Tweaks
           </Link>
         </div>
         <div className="hero-meta">
@@ -68,7 +68,7 @@ export function HeroSection() {
         <div className="hero-preview-frame-clean">
           <Image
             src="/images/hero-preview.png"
-            alt="NovaCore FPS comparison preview."
+            alt="NovaCore Tweaks dashboard showing Windows optimization interface for gaming performance."
             width={1200}
             height={800}
             className="hero-preview-image-clean"

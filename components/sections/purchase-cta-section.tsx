@@ -9,8 +9,9 @@ export function PurchaseCtaSection() {
           <span className="content-kicker">One-Time Purchase</span>
           <h2>NovaCore Personal - $4.99</h2>
           <p>
-            Secure checkout via Gumroad with instant access after purchase. Buy
-            once and keep NovaCore on your machine with no recurring fees.
+            Secure checkout via Gumroad with instant access after purchase.
+            NovaCore Tweaks deliver Windows optimization, FPS boost guidance,
+            and system tweaks that reduce input lag without recurring fees.
           </p>
         </div>
         <div className="cta-band-actions">
@@ -22,8 +23,8 @@ export function PurchaseCtaSection() {
           >
             Buy Now
           </a>
-          <a href="/pricing" className="hero-button hero-button-secondary">
-            View Pricing
+          <a href="/tweaks" className="hero-button hero-button-secondary">
+            View All Tweaks
           </a>
         </div>
       </article>

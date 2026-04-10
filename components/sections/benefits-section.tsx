@@ -1,5 +1,6 @@
 import { benefitCards } from "@/lib/site-content";
 import { Container } from "@/components/ui/container";
+import Link from "next/link";
 
 export function BenefitsSection() {
   return (
@@ -9,9 +10,13 @@ export function BenefitsSection() {
           Why <span>Choose NovaCore</span>
         </h2>
         <p>
-          Experience a sharper gaming setup with focused desktop optimization for
-          smoother frames, tighter response, and cleaner system behavior.
+          NovaCore Tweaks focuses on Windows optimization for gamers who want a
+          steady FPS boost, reduced input lag, and cleaner system tweaks that
+          improve overall gaming performance.
         </p>
+        <Link href="/tweaks" className="inline-action-link">
+          Learn how NovaCore Tweaks work
+        </Link>
       </div>
       <div className="benefits-grid">
         {benefitCards.map((card) => (
