@@ -96,7 +96,7 @@ export function ContactClient() {
       subject,
     )}&body=${encodeURIComponent(body)}`;
 
-    window.location.href = mailto;
+    window.location.assign(mailto);
   };
 
   return (
@@ -243,7 +243,11 @@ export function ContactClient() {
                   Support replies are sent by email. For fastest help, include
                   your Gumroad receipt ID or license ID in the message.
                 </p>
-                <button type="submit" className="hero-button hero-button-primary">
+                <button
+                  type="button"
+                  className="hero-button hero-button-primary"
+                  onClick={() => handleSubmit()}
+                >
                   Send Email
                 </button>
               </div>
