@@ -43,6 +43,61 @@ export function ContactClient() {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
 
+  const buildMailtoLink = () => {
+    const subject = formValues.subject.trim() || "NovaCore Support";
+    const body = [
+      `Name: ${formValues.name.trim()}`,
+      `Email: ${formValues.email.trim()}`,
+      `License ID: ${formValues.orderId.trim()}`,
+      "",
+      "Message:",
+      formValues.message.trim(),
+    ].join("\n");
+
+    return `mailto:${recipientEmail}?subject=${encodeURIComponent(
+      subject,
+    )}&body=${encodeURIComponent(body)}`;
+  };
+
+  const buildGmailLink = () => {
+    const subject = formValues.subject.trim() || "NovaCore Support";
+    const body = [
+      `Name: ${formValues.name.trim()}`,
+      `Email: ${formValues.email.trim()}`,
+      `License ID: ${formValues.orderId.trim()}`,
+      "",
+      "Message:",
+      formValues.message.trim(),
+    ].join("\n");
+
+    return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+      recipientEmail,
+    )}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
+
+  const validateForm = () => {
+    const nextErrors: Record<string, string> = {};
+    if (!formValues.name.trim()) {
+      nextErrors.name = "Name is required.";
+    }
+    if (!formValues.email.trim()) {
+      nextErrors.email = "Email is required.";
+    }
+    if (!formValues.subject.trim()) {
+      nextErrors.subject = "Subject is required.";
+    }
+    if (!formValues.message.trim()) {
+      nextErrors.message = "Message is required.";
+    }
+
+    if (Object.keys(nextErrors).length > 0) {
+      setErrors(nextErrors);
+      return false;
+    }
+
+    return true;
+  };
+
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
@@ -63,46 +118,11 @@ export function ContactClient() {
       event.preventDefault();
     }
 
-    const nextErrors: Record<string, string> = {};
-    if (!formValues.name.trim()) {
-      nextErrors.name = "Name is required.";
-    }
-    if (!formValues.email.trim()) {
-      nextErrors.email = "Email is required.";
-    }
-    if (!formValues.subject.trim()) {
-      nextErrors.subject = "Subject is required.";
-    }
-    if (!formValues.message.trim()) {
-      nextErrors.message = "Message is required.";
-    }
-
-    if (Object.keys(nextErrors).length > 0) {
-      setErrors(nextErrors);
+    if (!validateForm()) {
       return;
     }
 
-    const subject = formValues.subject.trim() || "NovaCore Support";
-    const body = [
-      `Name: ${formValues.name.trim()}`,
-      `Email: ${formValues.email.trim()}`,
-      `License ID: ${formValues.orderId.trim()}`,
-      "",
-      "Message:",
-      formValues.message.trim(),
-    ].join("\n");
-
-    const mailto = `mailto:${recipientEmail}?subject=${encodeURIComponent(
-      subject,
-    )}&body=${encodeURIComponent(body)}`;
-
-    const anchor = document.createElement("a");
-    anchor.href = mailto;
-    anchor.rel = "noreferrer";
-    anchor.style.display = "none";
-    document.body.appendChild(anchor);
-    anchor.click();
-    document.body.removeChild(anchor);
+    const mailto = buildMailtoLink();
     window.location.href = mailto;
   };
 
@@ -250,13 +270,32 @@ export function ContactClient() {
                   Support replies are sent by email. For fastest help, include
                   your Gumroad receipt ID or license ID in the message.
                 </p>
-                <button
-                  type="button"
-                  className="hero-button hero-button-primary"
-                  onClick={() => handleSubmit()}
-                >
-                  Send Email
-                </button>
+                <div className="cta-band-actions">
+                  <a
+                    href={buildMailtoLink()}
+                    className="hero-button hero-button-primary"
+                    onClick={(event) => {
+                      if (!validateForm()) {
+                        event.preventDefault();
+                      }
+                    }}
+                  >
+                    Send Email
+                  </a>
+                  <a
+                    href={buildGmailLink()}
+                    className="hero-button hero-button-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(event) => {
+                      if (!validateForm()) {
+                        event.preventDefault();
+                      }
+                    }}
+                  >
+                    Open in Gmail
+                  </a>
+                </div>
               </div>
             </form>
           </article>
